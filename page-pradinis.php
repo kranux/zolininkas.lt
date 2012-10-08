@@ -10,11 +10,9 @@ function strip_texts($text){
 	
 }
 
-?>
+get_header(); 
 
-
-<?php get_header(); ?>
-<div id="center_wrapper">
+?><div id="center_wrapper">
 	<div id="center" class="clearfix">
 		<div id="main_content" class="fl">
 			<div class="clearfix two_columns">

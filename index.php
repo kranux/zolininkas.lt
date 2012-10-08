@@ -11,10 +11,7 @@ function strip_texts($text){
 	
 }
 
-?>
-
-
-<div id="center_wrapper">
+?><div id="center_wrapper">
 <div id="center" class="clearfix">
 <div id="main_content" class="fl">
 	<?php $current_tag = single_tag_title("", false); 
@@ -223,5 +220,7 @@ function strip_texts($text){
 	<?php endif; ?>
 	
 </div>
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php 
+	get_sidebar(); 
+	
+	get_footer(); 	
