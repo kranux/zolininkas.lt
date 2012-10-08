@@ -1,0 +1,26 @@
+--- 2011-11-31
+- 3.1 bug fix
+- sidebar.php 
+	- Neteisingai veikë deðinëje iðvedamø receptø blokas. Pataisytas
+	- Pataisytas paskutinio elemento stilius
+- Ið vendors folderio paðalinta modernizr.js
+- Paðalintas katalogas fonts, nes jie nenaudojami
+- styles.css
+	- paðalinti uþkomentuoti stiliai kurie buvo likæ nuo specifiniø header paveikslëliø monoigrafijose
+	- Pakoreguotas default svetainës plotis nuo 1000 iki 980px
+	- Smulkios korekcijos, kad teisingiau atrodytø IE8	
+	
+--- 2011-11-30
+- 3.1 versija
+- Pridëtas js skiemenevimo skriptas. hyphenation.js 
+- Atnaujintas humans.txt failas
+- header.php
+	- Iðtrinti nenaudojami css failø kreipiniai
+	- pataisyti css failø keliai, ankðèiau naudota ið kitø temø
+	- sutvarkytas fav.icon elias
+	- idetas google+ blokas
+- images 
+	- Paðalinti nenaudojami img
+	- Sudëti fono paveikslëliai
+- sidebar.php 
+	- Sudeti automatiniai receptø atvaizdavimai pagal tagà. 

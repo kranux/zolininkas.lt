@@ -1,0 +1,10 @@
+.logo {font-size: 30px;}
+#header, #portrait-bg, #sidebar, .big_adds, .bottom_comments, .share-links, .tags, .entrymeta {display: none;}
+#center #footer {margin: 0; width: auto;}
+#footer {border-top: 1px solid #ccc; margin-top: 15px;}
+#footer p {display: none;}
+#footer #credits {display: block; color: #000;}
+.alignleft {float: left; margin-right: 8px;}
+.alignright {float: right; margin-left: 8px;}
+a {color: #000; text-decoration: none;}
+a img {border: none;}

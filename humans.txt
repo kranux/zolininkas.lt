@@ -1,0 +1,17 @@
+/* TEAM */
+	HTML/CSS coder: Paulius Kripaitis
+	Contact: paulius.kripaitis@gmail.com
+	From: Vilnius, Lithuania
+
+	PHP programmer: Andrius Kripaitis
+	Contact: andrius.kripaitis@gmail.com
+	From: Vilnius, Lithuani
+
+/* THANKS */
+	Identity: Eglė Ožalaitė
+
+/* SITE */
+	Last update:2011/11/30
+	Language:Lithuanian 
+	Doctype: HTML5
+	IDE: Notepad++, Dreamweaver, Photoshop
