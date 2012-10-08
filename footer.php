@@ -27,6 +27,7 @@
         document.getElementById('fb-root').appendChild(e);
       }());
     </script> 
+<?php wp_footer(); ?>
 </body>
 </html>
 <!-- <?php if (current_user_can('level_10')) echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
