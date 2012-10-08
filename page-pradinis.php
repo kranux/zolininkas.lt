@@ -54,6 +54,12 @@ get_header();
 							</p>
 						</div>
 					</div-->
+
+					<div class="index-latest-photo">
+						<?php if (function_exists('kran_latest_post_image')) 
+							kran_latest_post_image('nuotraukos', AK_IMAGES_THUMB_INDEX); ?>
+					</div>
+
 					<h2 style="margin-bottom: 8px;"><strong>Vaistiniai augalai</strong></h2>
 					<?php 
 						 $pages = get_pages("child_of=53&sort_column=post_date&sort_order=DESC");
