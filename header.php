@@ -14,11 +14,7 @@
 <link href="https://plus.google.com/112463392244221631179/" rel="publisher" />
 <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 <?php wp_head(); ?>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/vendors/hyphenate.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/waypoints.min.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.scrollTo-min.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/jquery.ba-bbq.min.js"></script>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/scripts.js"></script>
+
 </head>
 <body>
 <script type="text/javascript">

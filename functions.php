@@ -370,3 +370,20 @@ function get_main_image($content){
 	}
 	return $img_src;
 }
+
+function zolininkas_init_javascripts() {
+    $template_url = get_template_directory_uri(); 
+
+    wp_deregister_script( 'jquery' );
+    wp_register_script( 'jquery', "$template_url/scripts/jquery-1.8.2.min.js");
+    wp_enqueue_script( 'jquery' );
+    
+    wp_enqueue_script('hyphenate', "$template_url/vendors/hyphenate.js");
+    wp_enqueue_script('wayponts', "$template_url/waypoints.min.js");
+    wp_enqueue_script('scroll-to', "$template_url/jquery.scrollTo-min.js");
+    wp_enqueue_script('ba-bbq', "$template_url/jquery.ba-bbq.min.js");
+    wp_enqueue_script('zolininkas-main', "$template_url/scripts.js");
+
+
+}    
+add_action('wp_enqueue_scripts', 'zolininkas_init_javascripts');
