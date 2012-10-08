@@ -21,7 +21,6 @@ get_header();
 					<?php 
 						$posts = get_posts("numberposts=8&order=DESC&orderby=date");
 						foreach($posts as $post):
-							$img_src = get_main_image($post->post_content);
 							$link = get_permalink($post->ID);
 							$post_date = substr($post->post_date, 0, 10);
 							$pos = 180;//strpos($posts[0]->post_content, '<!--more-->');
@@ -30,12 +29,9 @@ get_header();
 							 }
 							 $content = mb_substr(stripBBCode(strip_tags($post->post_content)), 0, $pos);
 							?>
-							
 							<h2><a href="<?php echo $link; ?>"><?php echo $post->post_title?></a> <span>(<?php echo $post_date; ?>)</span></h2>
 							<p class="clearfix hyphenate">
-								<?php if ($img_src): ?>
-									<a href="<?php echo $link; ?>"><img src="<?php echo $img_src ?>?v0.1" alt=""/></a>
-								<?php endif; ?>
+								<?php the_post_thumbnail(ZOLININKAS_IMAGES_TINY_THUMB); ?>
 								<?php echo $content; ?><a href="<?php echo $link; ?>">...</a>
 							</p>
 						<?php endforeach; ?>
@@ -64,7 +60,7 @@ get_header();
 					<?php 
 						 $pages = get_pages("child_of=53&sort_column=post_date&sort_order=DESC");
 						 for ($i=0; $i<8; $i++):
-						 	$img_src = get_main_image($pages[$i]->post_content);
+						 	$post = $pages[$i];
 						 	$link = get_page_link($pages[$i]->ID); 
 						 	$pos = 180;//strpos($pages[$i]->post_content, '<!--more-->');
 						 	if ($pos===false){
@@ -81,9 +77,7 @@ get_header();
 							?>
 							<h2><a href="<?php echo $link; ?>" title="<?php echo $pages[$i]->post_title?>"><?php echo $short_title; ?></a></h2>
 							<p class="clearfix hyphenate"> 
-								<?php if ($img_src): ?>
-									<a href="<?php echo $link; ?>"><img src="<?php echo $img_src ?>?v0.1" alt="" /></a>
-								<?php endif; ?>
+								<?php the_post_thumbnail(ZOLININKAS_IMAGES_TINY_THUMB); ?>
 								<?php echo $content; ?><a href="<?php echo $link; ?>" title="<?php echo $pages[$i]->post_title; ?>">...</a>
 							</p>
 						<?php 

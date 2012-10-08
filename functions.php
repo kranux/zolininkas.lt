@@ -1,10 +1,20 @@
 <?php
+
+  define('ZOLININKAS_IMAGES_TINY_THUMB', 'zolininkas-tiny-thumb');
+
   // register widgetized sidebars
   if (function_exists('register_sidebar')) {
       register_sidebar(array('name'=> 'Right Sidebar', 'before_widget' => '<div id="%1$s" class="%2$s">', 'after_widget' => '</div>', 'before_title' => '<h4>', 'after_title' => '</h4>',));
   }
   
-  
+  // 6. Images Configuration
+//http://codex.wordpress.org/Post_Thumbnails
+add_action( 'after_setup_theme', 'zolininkas_after_setup_theme' ); 
+function zolininkas_after_setup_theme(){
+    add_theme_support('post-thumbnails');
+    set_post_thumbnail_size(150, 150, true);
+    add_image_size(ZOLININKAS_IMAGES_TINY_THUMB, 80, 80, true);
+}
   
   // function toprint out social bookmarking icons
   function social_bookmarks()
