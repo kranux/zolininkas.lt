@@ -16,10 +16,17 @@ foreach ($parents as $parent=>$label){
 	}
 }
 
+setlocale(LC_COLLATE, "lt_LT.utf8");
 function cmp_title($a, $b){
+	$fla = mb_substr($a['title'], 0, 1);
+	$flb = mb_substr($b['title'], 0, 1);
+	if ($fla=='S' && $flb=='Š'){
+		return -1;
+	}else if ($fla=='Š' && $flb=='S'){
+		return 1;
+	}
 	return strcoll ($a['title'], $b['title']);
 }
-setlocale(LC_COLLATE, "lt_LT.utf8");
 usort($pages, cmp_title);
 
 $letters = array();
