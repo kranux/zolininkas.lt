@@ -12,7 +12,7 @@
     </div>
 	 
 	<a href="http://www.zolininkas.lt/vaistazoliu-zinynas/" onClick="recordOutboundLink(this, 'Specialios nuorodos', 'zolininkas.lt/vaistazoliu-zinynas/');return false;" class="zolininkas-book fadeInLeft"><strong>Žolininko žinynas</strong></a>
-	<a href="http://www.zolininkas.lt/foto/" class="zolininkas-photo"><strong>Gražiausios foto</strong> (10.03)</a>
+	<a href="http://www.zolininkas.lt/foto/" class="zolininkas-photo"><strong>Gražiausios foto</strong> (11.08)</a>
 	   <?php if ($wp_query->post->post_name == "pradinis"):?>
         <?php else: ?>
         <!--<p style="padding: 6px; border: 3px solid #B3DE55; border-radius: 8px; margin-bottom: 12px; margin-top: 0; margin-bottom: 7px;"><span style="font-size: 22px;">Klevų sula jau teka!</span><br/> <a href="http://www.zolininkas.lt/gerimai/sula/">Daugiau apie sulą, sulainį, kaip ir kur leisti sulą</a></p-->
@@ -50,7 +50,7 @@
         
     </div>
 	
-	<h4 class="title">Aktualūs receptai</h4>
+	<h4 class="title">Receptai</h4>
 	<div class="featured_items">
 		<?php 
 			$query = new WP_Query(); 
@@ -100,7 +100,7 @@
   	 <?php endif; ?>	
 
 
-  	<div class="sidebar-inner">
+  	<div class="">
 		<?php dynamic_sidebar('Right Sidebar') ?>
 	</div>
     

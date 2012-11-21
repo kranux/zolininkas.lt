@@ -58,8 +58,14 @@ get_header();
 
 					<h2 style="margin-bottom: 8px;"><strong>Vaistiniai augalai</strong></h2>
 					<?php 
-						 $pages = get_pages("child_of=53&sort_column=post_date&sort_order=DESC");
-						 for ($i=0; $i<8; $i++):
+						 //$pages = get_pages("child_of=53&orderby=rand");
+						
+						$pages = query_posts(array(
+							'post_parent' => 53, 
+							'post_type' => 'page', 
+							'showposts' => 6, 
+							'orderby' => 'rand'));
+						 for ($i=0; $i<6; $i++):
 						 	$post = $pages[$i];
 						 	$link = get_page_link($pages[$i]->ID); 
 						 	$pos = 180;//strpos($pages[$i]->post_content, '<!--more-->');

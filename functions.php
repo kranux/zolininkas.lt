@@ -393,7 +393,5 @@ function zolininkas_init_javascripts() {
     wp_enqueue_script('scroll-to', "$template_url/jquery.scrollTo-min.js");
     wp_enqueue_script('ba-bbq', "$template_url/jquery.ba-bbq.min.js");
     wp_enqueue_script('zolininkas-main', "$template_url/scripts.js");
-
-
 }    
 add_action('wp_enqueue_scripts', 'zolininkas_init_javascripts');
