@@ -100,9 +100,11 @@
   	 <?php endif; ?>	
 
 
-  	<div class="">
-		<?php dynamic_sidebar('Right Sidebar') ?>
-	</div>
+  	<div class=""><?php 
+		if (! is_home() ):
+			dynamic_sidebar('Right Sidebar');
+		endif;
+ ?></div>
     
 	<p>
 		<a href="http://www.zolininkas.lt/zolininko-biblioteka/">Apie žolininko biblioteką</a><br/><br/>
